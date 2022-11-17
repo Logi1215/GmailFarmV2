@@ -22,7 +22,7 @@ namespace GmailFarmV2.Forms
         {
             try
             {
-                string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+                string ConnectionString = //Changed-For-Privacy-Reasons;
                 con = new SqlConnection(ConnectionString);
                 SqlCommand command;
                 SqlDataReader Reader;
@@ -105,7 +105,7 @@ namespace GmailFarmV2.Forms
         }
         public void DeleteKey(string oldkey)
         {
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             con = new SqlConnection(ConnectionString);
 
             if (con.State == System.Data.ConnectionState.Closed)
@@ -128,7 +128,7 @@ namespace GmailFarmV2.Forms
         }
         public void SetDevice(string id)
         {
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             con = new SqlConnection(ConnectionString);
 
             if (con.State == System.Data.ConnectionState.Closed)
@@ -154,7 +154,7 @@ namespace GmailFarmV2.Forms
             string key = "", keyPass = "", assignedUser = "";
             DateTime created = DateTime.Today, expired = DateTime.Today;
 
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             con = new SqlConnection(ConnectionString);
 
             con.Open();
@@ -211,7 +211,7 @@ namespace GmailFarmV2.Forms
         {
             bool valid = false;
             DateTime date = DateTime.Today;
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             con = new SqlConnection(ConnectionString);
 
             if (con.State == System.Data.ConnectionState.Closed)
