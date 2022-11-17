@@ -25,7 +25,7 @@ namespace GmailFarmV2.Views
             string key = "", keyPass = "", assignedUser = "";
             DateTime created = DateTime.Today, expired = DateTime.Today;
 
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             Connection = new SqlConnection(ConnectionString);
 
             Connection.Open();
@@ -80,7 +80,7 @@ namespace GmailFarmV2.Views
         }
         public void DeleteKey(string oldkey)
         {
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             Connection = new SqlConnection(ConnectionString);
 
             if (Connection.State == System.Data.ConnectionState.Closed)
@@ -104,7 +104,7 @@ namespace GmailFarmV2.Views
         private SqlConnection Connection;
         public void UpdateKeyBox()
         {
-            string ConnectionString = @"Data Source=100.42.52.204;Initial Catalog=elysiect_GmailFarm2;Persist Security Info=True;User ID=elysiect_elysiect;Password=HTQ63LxlBwz7b2Rn";
+            string ConnectionString = //Changed-For-Privacy-Reasons;
             Connection = new SqlConnection(ConnectionString);
             SqlCommand command;
             SqlDataReader Reader;
